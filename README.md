@@ -39,12 +39,16 @@ The API will be listening at `http://localhost:3000`
 - **GET** `/api/cars` used to retrieve the already stored cars uploaded via the **/api/csv/upload** endpoint
 ​
 ## DEMO usage
+
+**1-) Via Web**
+Access to **[http://localhost:3000](http://localhost:3000)** and fill the form
+
 ​
-**1-) Using PostMan collection**
+**2-) Using PostMan collection**
 You can use the following PostMan collection **[coding-challenge.postman_collection.json](./coding-challenge.postman_collection.json)** and select one of the mock CVS files to be summited.
 ​
 
-**2-) Using cURL**
+**3-) Using cURL**
 If you prefer to use a CLI, you can use the following cURL commands from the terminal to play with the DEMO API
 ​
 `Upload CSV file`
@@ -61,3 +65,7 @@ curl --location --request GET 'http://localhost:3000/api/cars' \
 ```
 ​
 `NOTE:` remember to spinup the API first!
+
+
+# Disclaimer
+I just tried on an M1 Macbook and realized MongodbMemoryServer is not yet supported on that processor. If you find the same issue, please try on any other platform (I can fix this, but I believe it exceeds the scope of this challenge)

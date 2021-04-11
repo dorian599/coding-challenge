@@ -6,6 +6,8 @@ const db = require("./config/db");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(express.static('public'));
+
 const router = require("./routes");
 
 app.use("/api/", router());
