@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "0e182bab-188e-405c-9a50-fad5f2c55904",
+		"name": "coding-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload CSV file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "provider",
+							"value": "Cars of the World",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/csv/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"csv",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Uploaded Cars",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
