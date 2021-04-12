@@ -5,6 +5,7 @@ This is a simple API with the following capabilities
 - Parse the CSV file and select only the data of a list of specific columns
 - Insert the data into an in-memory DB ([mongodb-memory-server](https://www.npmjs.com/package/mongodb-memory-server)) Just for DEMO Purpose
 ​
+
 **NOTE:** The description of the Coding Challenge can be found **[here](./REQUIREMENTS.md)**
 ​
 ## Technologies Used
@@ -22,6 +23,7 @@ For this DEMO we have two(2) CSV files:
 - [dev-challenge.csv](./mock/dev-challenge.csv) Contains mock data with the right columns
 - [dev-challenge-extra-columns.csv](./mock/dev-challenge-extra-columns.csv) Contains mock data with the right columns and also with some extra columns to demostrate the correct execution of the api
 ​
+
 **Note:** The mock data was generated using the tool [Mockaroo](https://www.mockaroo.com/). If you want to generate more CSV mock data, you can use the following already existing schemas at Mockaroo:
 - [dev-challenge](https://www.mockaroo.com/e7ee74d0)
 - [dev-challenge-extra-columns](https://www.mockaroo.com/e7ee74d0)
@@ -40,7 +42,7 @@ The API will be listening at `http://localhost:3000`
 - **GET** `/api/cars` used to retrieve the already stored cars uploaded via the **/api/csv/upload** endpoint
 ​
 ## Unit Testing
-Execute the following commando to execute the unit testing
+Execute the following command to execute the unit testing
 ```
 npm test
 ```
