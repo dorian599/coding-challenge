@@ -3,6 +3,8 @@ const { MongoMemoryServer } = require("mongodb-memory-server");
 
 const mongoServer = new MongoMemoryServer();
 
+require("../models/Cars");
+
 exports.dbConnect = async () => {
   const uri = await mongoServer.getUri();
 
@@ -22,4 +24,4 @@ exports.dbDisconnect = async () => {
   await mongoServer.stop();
 };
 
-require("../models/Cars");
+

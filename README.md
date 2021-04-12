@@ -15,6 +15,7 @@ This is a simple API with the following capabilities
 - [fast-csv](https://www.npmjs.com/package/fast-csv) for parsing and formating the CSV files
 - [mongoosejs](https://mongoosejs.com/) as MongoDB object modeling
 - [slug](https://www.npmjs.com/package/slug) to slugify the "provider name" that uploads the CSV
+- [Jest](https://jestjs.io/) and [SuperTest](https://www.npmjs.com/package/supertest) to perform unit testing
 ​
 ## Mock Data
 For this DEMO we have two(2) CSV files:
@@ -38,6 +39,11 @@ The API will be listening at `http://localhost:3000`
 - **POST** `/api/csv/upload` used to upload the CSV file
 - **GET** `/api/cars` used to retrieve the already stored cars uploaded via the **/api/csv/upload** endpoint
 ​
+## Unit Testing
+Execute the following commando to execute the unit testing
+```
+npm test
+```
 ## DEMO usage
 
 **1-) Via Web**

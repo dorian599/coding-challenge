@@ -64,7 +64,7 @@ exports.upload = async (req, res) => {
 
 exports.getCars = async (req, res) => {
   const cars = await Car.find();
-  res
-    .status(200)
-    .json({ message: "List of cars", successfull: true, data: cars });
+  const message = cars.length === 0 ? "No cars" : "List of cars" ;
+  const statusCode = cars.length === 0 ? 209 : 200 ;
+  res.status(statusCode).json({ message: message, successfull: true, data: cars });
 };

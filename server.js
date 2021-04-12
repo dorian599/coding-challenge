@@ -1,16 +1,17 @@
-const express = require("express");
-const app = express();
+// const express = require("express");
+// const app = express();
 const db = require("./config/db");
+const app = require("./app");
 
-// Express config
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// // Express config
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
-const router = require("./routes");
+// const router = require("./routes");
 
-app.use("/api/", router());
+// app.use("/api/", router());
 
 // Port to spin up the server
 const port = process.env.PORT || 3000;
