@@ -59,6 +59,7 @@ You can use the following PostMan collection **[coding-challenge.postman_collect
 **3-) Using cURL**
 If you prefer to use a CLI, you can use the following cURL commands from the terminal to play with the DEMO API
 ​
+
 `Upload CSV file`
 ```
 curl --location --request POST 'http://localhost:3000/api/csv/upload' \
